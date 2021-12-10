@@ -50,6 +50,7 @@ export interface LoggerOptions {
   colorize?: boolean;
   preLine?: string;
   color?: string;
+  silent?: boolean;
 }
 
 export default class Logger {
@@ -102,6 +103,7 @@ export default class Logger {
 
   // deno-lint-ignore no-explicit-any
   private handle(options: LoggerOptions, ...args: any): void {
+    if (this.options.silent) return;
     console.log(
       (this.options.colorize) ? Colors.FgLiteCyan : "",
       `[${new Date().toISOString()}]`,
