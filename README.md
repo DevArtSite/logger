@@ -1,6 +1,6 @@
 # logger [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https://raw.githubusercontent.com/DevArtSite/logger/master/mod.ts)
 
-> Simple logger
+> Simple Deno logger
 
 ## Usage
 
